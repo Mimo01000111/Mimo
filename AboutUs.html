@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Barangay 118 Online System</title>
+    <link rel="shortcut icon" type="image/png" href="Logo-Favicon-removebg-preview.png">
+    <meta name="description" content="Learn about Barangay 118 - our mission, officials, committees, and services for the community">
+    <meta name="keywords" content="barangay, about us, community, officials, services">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="AboutUs.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html" id="home-logo" class="logo" aria-label="Barangay 118 Online System Home">
+                    <img src="Logo-Favicon-removebg-preview.png" alt="Barangay 118 Official Logo" class="logo-image" width="70" height="70">
+                    <h1 id="system-name">BARANGAY 118 ONLINE SYSTEM</h1>
+                </a>
+
+                <nav class="nav-links" aria-label="Main navigation">
+                    <a href="index.html" aria-label="Home page">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="AboutUs.html" class="active" aria-current="page" aria-label="About Barangay 118 page">
+                        <i class="fas fa-info-circle" aria-hidden="true"></i>
+                        <span>About Us</span>
+                    </a>
+                    <a href="News.html" aria-label="Barangay News page">
+                        <i class="fas fa-newspaper" aria-hidden="true"></i>
+                        <span>News</span>
+                    </a>
+                    <a href="Emergency.html" aria-label="Barangay Emergency page">
+                        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                        <span>Emergency</span>
+                    </a>
+                    <a href="CreateAnAccount.html" aria-label="Create an account page">
+                        <i class="fas fa-user-plus" aria-hidden="true"></i>
+                        <span>Create Account</span>
+                    </a>
+                    <a href="LogIn.html" aria-label="Login page">
+                        <i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+                        <span>Login</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 id="about-hero-title">About Barangay 118</h1>
+            <p id="about-hero-description">Get to know our mission and the people serving our community.</p>
+        </div>
+    </section>
+
+    <!-- About Barangay Section -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 id="about-story-title">Our Community Story</h2>
+                    <p id="about-story-content-1">For over 62 years, Barangay 118 has stood as a pillar of public service — committed to delivering efficient, transparent, and accessible government services to our residents. Located in the heart of the city, our barangay is home to a vibrant community of families, businesses, and institutions working together for progress and unity.</p>
+                    <p id="about-story-content-2">Through the launch of our Online System, we are taking our commitment to the next level — providing 24/7 access to essential services from the comfort of your home. This digital transformation bridges the gap between the barangay administration and the people we serve, ensuring convenience and connectivity for all.</p>
+                    <p id="about-story-content-3">Behind every program and project is a dedicated team of officials and staff who serve with integrity, transparency, and compassion — ensuring that every resident feels heard, supported, and cared for.</p>
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                </div>
+                <div class="about-image">
+                    <img id="about-barangay-image" src="Screen Shot 2025-11-23 at 10.35.19 AM.png" alt="Barangay Hall">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title" id="mission-vision-title">Our Mission & Vision</h2>
+            <div class="mission-vision">
+                <div class="mission-card">
+                    <div class="mission-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3 id="mission-title">Our Mission</h3>
+                    <p id="mission-description">To provide efficient, transparent, and accessible government services to all residents through innovative digital solutions, fostering a connected and empowered community.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon"><i class="fas fa-eye"></i></div>
+                    <h3 id="vision-title">Our Vision</h3>
+                    <p id="vision-description">To be a model barangay known for excellent public service, community engagement, and technological innovation that improves the quality of life for all residents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barangay Officials Section -->
+    <section class="section section-white">
+        <div class="container">
+            <h2 class="section-title">Barangay Officials</h2>
+            <p class="section-subtitle" id="officials-subtitle">Meet the dedicated team serving our community</p>
+            
+            <div class="officials-grid" id="officials-container">
+                <!-- Officials will be loaded dynamically here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Barangay Committees Section -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Barangay Committees</h2>
+            <p class="section-subtitle" id="committees-subtitle">Our specialized committees addressing various community needs</p>
+            
+            <div class="committee-grid" id="committees-container">
+                <!-- Committees will be loaded dynamically here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Requirements Section -->
+    <section class="section section-white">
+        <div class="container">
+            <h2 class="section-title">Document Requirements</h2>
+            <p class="section-subtitle" id="documents-subtitle">Information about the documents you can request and their requirements</p>
+            
+            <div class="documents-grid" id="documents-container">
+                <!-- Documents will be loaded dynamically here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section - UPDATED WITH EDITABLE MAP LINK -->
+    <section class="section section-white">
+        <div class="container">
+            <h2 class="section-title" id="location-title">Barangay Location</h2>
+            <p class="section-subtitle" id="location-subtitle">Find our barangay hall and important facilities</p>
+            <div class="map-container">
+                <iframe 
+                    id="barangay-map-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.756058428442!2d120.98186107483958!3d14.617918276090184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b5f6a5b2c8b1%3A0x3a5c6c3c3c3c3c3c!2s402%202nd%20St%2C%20Grace%20Park%20East%2C%20Caloocan%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1690000000000!5m2!1sen!2sph" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Barangay 118 Location Map">
+                </iframe>
+                <div class="map-info">
+                    <p class="address" id="barangay-address">402 2nd St, Grace Park East, Caloocan, Metro Manila</p>
+                    <p id="barangay-location">Barangay 118 Hall, Grace Park East, Caloocan</p>
+                </div>
+                
+                <!-- Emergency Contacts -->
+                <div class="emergency-contacts">
+                    <div class="emergency-card">
+                        <h3>DIAL 911</h3>
+                        <p>For All Emergencies</p>
+                        <p>Police Assistance • Fire Response • Medical Aid</p>
+                    </div>
+                    <div class="emergency-card">
+                        <h3 id="hotline-title">Barangay 118 Hotline</h3>
+                        <p id="hotline-description">For barangay-related concerns</p>
+                        <p id="hotline-number">(02) 8123-4567</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions about our barangay and services</p>
+            <div class="faq-container" id="faq-container">
+                <!-- FAQs will be loaded dynamically here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section section-white" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 1.5rem;" id="contact-section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p id="contact-address">402 2nd St, Grace Park East, Caloocan, Metro Manila</p>
+                            <a href="https://maps.app.goo.gl/vic9Xuyab5eZhxSaA" target="_blank" class="map-link-button">
+                                <i class="fas fa-map"></i> <span id="map-link-text">View Map</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p id="contact-email">info@barangay118.gov.ph</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p id="contact-phone">(02) 8123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Office Hours</h3>
+                            <p id="contact-hours-weekdays">Monday-Friday: 8:00 AM - 5:00 PM</p>
+                            <p id="contact-hours-saturday">Saturday: 8:00 AM - 12:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" name="from_name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Email <small>(Gmail only)</small></label>
+                            <input type="email" name="from_email" class="form-control" required>
+                            <small class="email-hint" style="font-size: 0.85rem; color: var(--gray);">Only Gmail addresses are accepted (@gmail.com)</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 11px; font-size: 0.95rem;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 id="footer-title">Barangay 118 Online System</h3>
+                    <p id="footer-description">Digital and efficient services for Barangay 118.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank" class="facebook" id="facebook-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:barangay118@gmail.com" class="gmail" id="email-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-5.318V11.73L12 16.64l-5.045-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul id="footer-contact-info">
+                        <!-- Contact info will be loaded dynamically here -->
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p id="copyright-text">&copy; 2025 Barangay 118 Online System. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>Message sent successfully!</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize EmailJS with your public key
+            emailjs.init("KkQSfG62Jg8W8uies");
+            
+            // Load content from localStorage
+            loadContent();
+            
+            // FAQ functionality - toggle questions
+            document.addEventListener('click', function(e) {
+                if (e.target.closest('.faq-question')) {
+                    const item = e.target.closest('.faq-item');
+                    item.classList.toggle('active');
+                }
+            });
+
+            // Contact form handling
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', handleFormSubmit);
+                
+                // Real-time email validation
+                const emailInput = document.querySelector('input[name="from_email"]');
+                if (emailInput) {
+                    emailInput.addEventListener('input', validateEmail);
+                }
+            }
+
+            // Listen for storage changes (when admin updates data)
+            window.addEventListener('storage', function(e) {
+                if (e.key === 'barangayContent') {
+                    loadContent();
+                    showToast('Content updated successfully!', 'success');
+                }
+            });
+
+            // Also listen for same-page storage events (for modern browsers)
+            window.addEventListener('storageUpdated', function() {
+                loadContent();
+            });
+
+            // Validate if email is Gmail
+            function isValidGmail(email) {
+                const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+                return gmailRegex.test(email);
+            }
+
+            // Email validation function
+            function validateEmail(e) {
+                const email = e.target.value.trim();
+                if (email && !isValidGmail(email)) {
+                    e.target.style.borderColor = 'var(--error)';
+                } else {
+                    e.target.style.borderColor = 'var(--border)';
+                }
+            }
+
+            // Handle contact form submission
+            function handleFormSubmit(e) {
+                e.preventDefault();
+                const emailInput = e.target.from_email;
+                const email = emailInput.value.trim();
+                
+                // Validate Gmail
+                if (!isValidGmail(email)) {
+                    showToast('Please use a valid Gmail address (@gmail.com only)', 'error');
+                    emailInput.style.borderColor = 'var(--error)';
+                    return;
+                }
+
+                emailInput.style.borderColor = 'var(--border)';
+
+                const submitBtn = e.target.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+
+                // Format timestamp
+                const now = new Date();
+                const formattedTime = now.toLocaleString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    hour12: true
+                });
+
+                // Save message to localStorage for admin panel
+                const messages = JSON.parse(localStorage.getItem('contactMessages')) || [];
+                const newMessage = {
+                    id: Date.now(),
+                    from_name: e.target.from_name.value,
+                    from_email: e.target.from_email.value,
+                    subject: e.target.subject.value,
+                    message: e.target.message.value,
+                    timestamp: formattedTime,
+                    status: 'unread',
+                    emailSent: false // Track email delivery status
+                };
+                messages.push(newMessage);
+                localStorage.setItem('contactMessages', JSON.stringify(messages));
+
+                // Prepare EmailJS parameters
+                const templateParams = {
+                    from_name: e.target.from_name.value,
+                    from_email: e.target.from_email.value,
+                    subject: e.target.subject.value,
+                    message: e.target.message.value,
+                    time: formattedTime,
+                    date: formattedTime
+                };
+
+                // Send email via EmailJS
+                emailjs.send('service_upx49ro', 'template_4loo5dp', templateParams)
+                    .then((response) => {
+                        console.log('SUCCESS!', response.status, response.text);
+                        showToast('Message sent successfully!', 'success');
+                        
+                        // Update message status to indicate email was sent
+                        const updatedMessages = JSON.parse(localStorage.getItem('contactMessages')) || [];
+                        const updatedMessageIndex = updatedMessages.findIndex(msg => msg.id === newMessage.id);
+                        if (updatedMessageIndex !== -1) {
+                            updatedMessages[updatedMessageIndex].emailSent = true;
+                            localStorage.setItem('contactMessages', JSON.stringify(updatedMessages));
+                        }
+                        
+                        // Reset form
+                        e.target.reset();
+                    })
+                    .catch((error) => {
+                        console.log('FAILED...', error);
+                        showToast('Message saved! We will contact you soon.', 'info');
+                        
+                        // Update message status to indicate email failed
+                        const updatedMessages = JSON.parse(localStorage.getItem('contactMessages')) || [];
+                        const updatedMessageIndex = updatedMessages.findIndex(msg => msg.id === newMessage.id);
+                        if (updatedMessageIndex !== -1) {
+                            updatedMessages[updatedMessageIndex].emailSent = false;
+                            updatedMessages[updatedMessageIndex].note = 'Email delivery failed - saved to database';
+                            localStorage.setItem('contactMessages', JSON.stringify(updatedMessages));
+                        }
+                        
+                        // Reset form
+                        e.target.reset();
+                    })
+                    .finally(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    });
+            }
+
+            // Show toast notification
+            function showToast(message, type = 'info') {
+                const toast = document.querySelector('.toast');
+                if (toast) {
+                    const icon = type === 'success' ? 'fa-check-circle' : 
+                                type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle';
+                    toast.innerHTML = `<i class="fas ${icon}"></i><span>${message}</span>`;
+                    
+                    // Set background color based on type
+                    if (type === 'success') {
+                        toast.style.background = 'var(--success)';
+                    } else if (type === 'error') {
+                        toast.style.background = 'var(--error)';
+                    } else {
+                        toast.style.background = 'var(--primary)';
+                    }
+                    
+                    toast.classList.add('show');
+                    
+                    setTimeout(() => {
+                        toast.classList.remove('show');
+                    }, 4000);
+                }
+            }
+            
+            // Load content from localStorage
+            function loadContent() {
+                const content = JSON.parse(localStorage.getItem('barangayContent')) || getDefaultData();
+                
+                // Helper function to set content
+                function setContent(id, defaultValue, isAttribute = false, attrName = '') {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        let value = getNestedValue(content, id) || defaultValue;
+                        
+                        if (isAttribute && attrName) {
+                            element.setAttribute(attrName, value);
+                        } else if (element.tagName === 'IMG') {
+                            element.src = value;
+                        } else if (element.tagName === 'A' && id.includes('link')) {
+                            element.href = value;
+                        } else if (element.tagName === 'SPAN') {
+                            element.textContent = value;
+                        } else {
+                            element.textContent = value;
+                        }
+                    }
+                }
+                
+                // Helper to get nested values from content object
+                function getNestedValue(obj, path) {
+                    return path.split('.').reduce((current, key) => {
+                        return current && current[key] !== undefined ? current[key] : null;
+                    }, obj);
+                }
+                
+                // System Name
+                setContent('system-name', content.systemName || 'BARANGAY 118 ONLINE SYSTEM');
+                
+                // Hero Section
+                setContent('about-hero-title', content.aboutUs?.hero?.title || 'About Barangay 118');
+                setContent('about-hero-description', content.aboutUs?.hero?.description || 'Get to know our mission and the people serving our community.');
+                
+                // About Section
+                setContent('about-story-title', content.aboutUs?.story?.title || 'Our Community Story');
+                setContent('about-story-content-1', content.aboutUs?.story?.content1 || 'For over 62 years, Barangay 118 has stood as a pillar of public service — committed to delivering efficient, transparent, and accessible government services to our residents. Located in the heart of the city, our barangay is home to a vibrant community of families, businesses, and institutions working together for progress and unity.');
+                setContent('about-story-content-2', content.aboutUs?.story?.content2 || 'Through the launch of our Online System, we are taking our commitment to the next level — providing 24/7 access to essential services from the comfort of your home. This digital transformation bridges the gap between the barangay administration and the people we serve, ensuring convenience and connectivity for all.');
+                setContent('about-story-content-3', content.aboutUs?.story?.content3 || 'Behind every program and project is a dedicated team of officials and staff who serve with integrity, transparency, and compassion — ensuring that every resident feels heard, supported, and cared for.');
+                setContent('about-barangay-image', content.aboutUs?.story?.image || 'Screen Shot 2025-11-23 at 10.35.19 AM.png');
+                
+                // Mission & Vision
+                setContent('mission-vision-title', content.aboutUs?.missionVision?.title || 'Our Mission & Vision');
+                setContent('mission-title', content.aboutUs?.missionVision?.mission?.title || 'Our Mission');
+                setContent('mission-description', content.aboutUs?.missionVision?.mission?.description || 'To provide efficient, transparent, and accessible government services to all residents through innovative digital solutions, fostering a connected and empowered community.');
+                setContent('vision-title', content.aboutUs?.missionVision?.vision?.title || 'Our Vision');
+                setContent('vision-description', content.aboutUs?.missionVision?.vision?.description || 'To be a model barangay known for excellent public service, community engagement, and technological innovation that improves the quality of life for all residents.');
+                
+                // Officials
+                setContent('officials-subtitle', content.aboutUs?.officials?.subtitle || 'Meet the dedicated team serving our community');
+                renderOfficials(content.aboutUs?.officials?.list || []);
+                
+                // Committees
+                setContent('committees-subtitle', content.aboutUs?.committees?.subtitle || 'Our specialized committees addressing various community needs');
+                renderCommittees(content.aboutUs?.committees?.list || []);
+                
+                // Documents
+                setContent('documents-subtitle', content.aboutUs?.documents?.subtitle || 'Information about the documents you can request and their requirements');
+                renderDocuments(content.aboutUs?.documents?.list || []);
+                
+                // Location Section - UPDATED FOR EDITABLE MAP
+                setContent('location-title', content.aboutUs?.location?.title || 'Barangay Location');
+                setContent('location-subtitle', content.aboutUs?.location?.subtitle || 'Find our barangay hall and important facilities');
+                setContent('barangay-address', content.aboutUs?.location?.address || '402 2nd St, Grace Park East, Caloocan, Metro Manila');
+                setContent('barangay-location', content.aboutUs?.location?.location || 'Barangay 118 Hall, Grace Park East, Caloocan');
+                
+                // Set Google Maps iframe src from data
+                const mapIframe = document.getElementById('barangay-map-iframe');
+                if (mapIframe && content.aboutUs?.location?.mapLink) {
+                    mapIframe.src = content.aboutUs.location.mapLink;
+                }
+                
+                setContent('hotline-title', content.aboutUs?.location?.hotline?.title || 'Barangay 118 Hotline');
+                setContent('hotline-description', content.aboutUs?.location?.hotline?.description || 'For barangay-related concerns');
+                setContent('hotline-number', content.aboutUs?.location?.hotline?.number || '(02) 8123-4567');
+                
+                // Contact Section  
+                setContent('contact-section-title', content.aboutUs?.contact?.title || 'Get In Touch');
+                setContent('contact-address', content.aboutUs?.contact?.address || '402 2nd St, Grace Park East, Caloocan, Metro Manila');
+                setContent('contact-email', content.aboutUs?.contact?.email || 'info@barangay118.gov.ph');
+                setContent('contact-phone', content.aboutUs?.contact?.phone || '(02) 8123-4567');
+                setContent('contact-hours-weekdays', content.aboutUs?.contact?.hours?.weekdays || 'Monday-Friday: 8:00 AM - 5:00 PM');
+                setContent('contact-hours-saturday', content.aboutUs?.contact?.hours?.saturday || 'Saturday: 8:00 AM - 12:00 PM');
+                setContent('map-link-text', content.aboutUs?.contact?.mapLinkText || 'View Map');
+                
+                // Set map link button href
+                const mapLinkButton = document.querySelector('.map-link-button');
+                if (mapLinkButton && content.aboutUs?.contact?.mapLink) {
+                    mapLinkButton.href = content.aboutUs.contact.mapLink;
+                }
+                
+                // FAQs
+                renderFAQs(content.aboutUs?.faqs?.list || []);
+                
+                // Footer
+                setContent('footer-title', content.footer?.title || 'Barangay 118 Online System');
+                setContent('footer-description', content.footer?.description || 'Digital and efficient services for Barangay 118.');
+                setContent('copyright-text', content.footer?.copyright || '&copy; 2025 Barangay 118 Online System. All Rights Reserved.');
+                setContent('facebook-link', content.footer?.socialMedia?.facebook || 'https://www.facebook.com', true, 'href');
+                setContent('email-link', content.footer?.socialMedia?.email || 'mailto:barangay118@gmail.com', true, 'href');
+                
+                // Footer Contact Info
+                renderFooterContact(content.footer?.contactInfo || []);
+            }
+            
+            // Get default data structure
+            function getDefaultData() {
+                return {
+                    systemName: "BARANGAY 118 ONLINE SYSTEM",
+                    aboutUs: {
+                        hero: {
+                            title: "About Barangay 118",
+                            description: "Get to know our mission and the people serving our community."
+                        },
+                        story: {
+                            title: "Our Community Story",
+                            content1: "For over 62 years, Barangay 118 has stood as a pillar of public service — committed to delivering efficient, transparent, and accessible government services to our residents. Located in the heart of the city, our barangay is home to a vibrant community of families, businesses, and institutions working together for progress and unity.",
+                            content2: "Through the launch of our Online System, we are taking our commitment to the next level — providing 24/7 access to essential services from the comfort of your home. This digital transformation bridges the gap between the barangay administration and the people we serve, ensuring convenience and connectivity for all.",
+                            content3: "Behind every program and project is a dedicated team of officials and staff who serve with integrity, transparency, and compassion — ensuring that every resident feels heard, supported, and cared for.",
+                            image: "Screen Shot 2025-11-23 at 10.35.19 AM.png"
+                        },
+                        missionVision: {
+                            title: "Our Mission & Vision",
+                            mission: {
+                                title: "Our Mission",
+                                description: "To provide efficient, transparent, and accessible government services to all residents through innovative digital solutions, fostering a connected and empowered community."
+                            },
+                            vision: {
+                                title: "Our Vision", 
+                                description: "To be a model barangay known for excellent public service, community engagement, and technological innovation that improves the quality of life for all residents."
+                            }
+                        },
+                        officials: {
+                            subtitle: "Meet the dedicated team serving our community",
+                            list: [
+                                { id: 1, avatar: 'J', name: 'Jerryllyn D. Bolo', position: 'Chairwoman', description: 'Leading Barangay 118 with dedication and commitment to community service.' },
+                                { id: 2, avatar: 'J', name: 'Jeremy Abesamis', position: 'SK Chairman', description: 'Representing the youth of Barangay 118 and advocating for their needs.' },
+                                { id: 3, avatar: 'R', name: 'Richard Rayos', position: 'Secretary', description: 'Managing barangay documentation and administrative processes.' },
+                                { id: 4, avatar: 'C', name: 'Carolina T. Manabat', position: 'Treasurer', description: 'Overseeing barangay finances and budget management.' }
+                            ]
+                        },
+                        committees: {
+                            subtitle: "Our specialized committees addressing various community needs",
+                            list: [
+                                { id: 1, icon: 'fas fa-shield-heart', name: 'Committee on Violence Against Women and Children', chairperson: 'Annalyn Abesamis', description: 'Addressing issues related to violence against women and children and providing support services. This committee ensures protection and empowerment for vulnerable groups in our community.' },
+                                { id: 2, icon: 'fas fa-hammer', name: 'Committee on Infrastructure', chairperson: 'Joemarie F. Dohinog', description: 'Overseeing barangay infrastructure projects and maintenance of public facilities. This committee ensures our community has well-maintained roads, buildings, and public spaces.' },
+                                { id: 3, icon: 'fas fa-user-shield', name: 'Committee on Public Safety', chairperson: 'Ronald Allan Mateo', description: 'Ensuring the safety and security of residents through various safety programs. This committee coordinates with local authorities to maintain a secure environment for all.' },
+                                { id: 4, icon: 'fas fa-hand-holding-medical', name: 'Committee on Health and Sanitation', chairperson: 'Lucas Badilla', description: 'Promoting health programs and maintaining cleanliness in the community. This committee organizes medical missions and ensures proper waste management.' },
+                                { id: 5, icon: 'fas fa-peace', name: 'Committee on Peace and Order', chairperson: 'Novel Nolasco', description: 'Maintaining peace and order within the barangay through community policing. This committee resolves disputes and promotes harmonious living.' },
+                                { id: 6, icon: 'fas fa-graduation-cap', name: 'Committee on Education', chairperson: 'Ma. Theresa Neri', description: 'Supporting educational initiatives and programs for residents of all ages. This committee provides scholarships and organizes literacy programs.' },
+                                { id: 7, icon: 'fas fa-leaf', name: 'Committee on Environmental', chairperson: 'Alex Bolo', description: 'Implementing environmental programs and sustainability initiatives. This committee promotes green spaces and environmental awareness campaigns.' }
+                            ]
+                        },
+                        documents: {
+                            subtitle: "Information about the documents you can request and their requirements",
+                            list: [
+                                { 
+                                    id: 1, 
+                                    name: 'Barangay Clearance', 
+                                    description: 'Required for various transactions including employment, business permits, and legal matters. This document certifies your good standing in the community.', 
+                                    requirements: ['Valid government-issued ID', 'Proof of Residency (utility bill or lease agreement)', 'Community Tax Certificate (cedula)'], 
+                                    processingTime: '10-15 minutes' 
+                                },
+                                { 
+                                    id: 2, 
+                                    name: 'Certificate of Residency', 
+                                    description: 'Proof of residency in Barangay 118 for various purposes such as school enrollment, loan applications, and government transactions.', 
+                                    requirements: ['Valid government-issued ID', 'Proof of Residency (utility bill or barangay ID)', 'Completed application form'], 
+                                    processingTime: 'Same day' 
+                                },
+                                { 
+                                    id: 3, 
+                                    name: 'Certificate of Indigency', 
+                                    description: 'For availing government assistance programs and benefits. This document certifies your eligibility for social welfare programs.', 
+                                    requirements: ['Valid ID', 'Proof of Income or Affidavit of No Income', 'Proof of Residency'], 
+                                    processingTime: '1-2 days' 
+                                },
+                                { 
+                                    id: 4, 
+                                    name: 'Barangay ID', 
+                                    description: 'Official identification card issued by Barangay 118. Valid for local transactions and as supplementary identification.', 
+                                    requirements: ['Valid ID (if available)', 'Proof of Residency', '1x1 ID Photo', 'Completed application form'], 
+                                    processingTime: '3-5 working days' 
+                                }
+                            ]
+                        },
+                        location: {
+                            title: "Barangay Location",
+                            subtitle: "Find our barangay hall and important facilities",
+                            mapDescription: "Interactive Barangay Map",
+                            address: '402 2nd St, Grace Park East, Caloocan, Metro Manila',
+                            location: 'Barangay 118 Hall, Grace Park East, Caloocan',
+                            mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.756058428442!2d120.98186107483958!3d14.617918276090184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b5f6a5b2c8b1%3A0x3a5c6c3c3c3c3c3c!2s402%202nd%20St%2C%20Grace%20Park%20East%2C%20Caloocan%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1690000000000!5m2!1sen!2sph",
+                            hotline: {
+                                title: 'Barangay 118 Hotline',
+                                description: 'For barangay-related concerns',
+                                number: '(02) 8123-4567'
+                            }
+                        },
+                        contact: {
+                            title: "Get In Touch",
+                            address: '402 2nd St, Grace Park East, Caloocan, Metro Manila',
+                            email: 'info@barangay118.gov.ph',
+                            phone: '(02) 8123-4567',
+                            mapLink: "https://maps.app.goo.gl/vic9Xuyab5eZhxSaA",
+                            hours: {
+                                weekdays: 'Monday-Friday: 8:00 AM - 5:00 PM',
+                                saturday: 'Saturday: 8:00 AM - 12:00 PM'
+                            },
+                            mapLinkText: "View Map"
+                        },
+                        faqs: {
+                            list: [
+                                { 
+                                    id: 1, 
+                                    question: 'What are the office hours of the barangay hall?', 
+                                    answer: 'Our barangay hall is open from Monday to Friday, 8:00 AM to 5:00 PM, and on Saturdays from 8:00 AM to 12:00 PM. We are closed on Sundays and holidays.' 
+                                },
+                                { 
+                                    id: 2, 
+                                    question: 'How can I request a Barangay Clearance?', 
+                                    answer: 'Required documents: Valid government-issued ID (driver\'s license, passport, voter\'s ID), proof of residency (utility bill, lease/rental contract), completed barangay clearance application form, Community Tax Certificate (cedula), and passport-size photo if required. Fees: Free (no payment required). Processing time: Usually issued immediately (10–15 minutes). Where & How to apply: Apply in person at Barangay 118 Hall, weekdays 8 AM–5 PM. Submit requirements and receive your clearance.' 
+                                },
+                                { 
+                                    id: 3, 
+                                    question: 'How can I request a Certificate of Residency?', 
+                                    answer: 'Required documents: Government-issued ID, proof of address (utility bill, lease, or cedula), and completed residency certificate form. Fees: Free (no payment required). Processing time: On the spot or same day. Where & How to apply: Apply at Barangay 118 Hall, weekdays 8 AM–5 PM. Present your documents and receive the certificate. Eligibility / Rights: Possessory Rights (recognized occupancy) and Ownership Rights (legal ownership of the property).' 
+                                },
+                                { 
+                                    id: 4, 
+                                    question: 'How can I request a Certificate of Indigency?', 
+                                    answer: 'Required documents: Government-issued ID, proof of residence (barangay ID, voter\'s record, or utility bill), supporting income documents if applicable, and purpose statement. Fees: Free. Processing time: Usually issued immediately. Where & How to apply: Submit request at Barangay 118 Hall, weekdays 8 AM–5 PM. The officer will review and issue the certificate.' 
+                                },
+                                { 
+                                    id: 5, 
+                                    question: 'How can I get a Barangay ID?', 
+                                    answer: 'Required documents: Valid ID (if any), proof of residency (utility bill, barangay certificate, or cedula), 1–2 passport-size photos, and completed application form. Fees: Free. Processing time: Usually issued on the same day. Where & How to apply: Apply at Barangay 118 Hall, weekdays 8 AM–5 PM. Submit your requirements and receive your Barangay ID.' 
+                                },
+                                { 
+                                    id: 6, 
+                                    question: 'How can I report a community concern?', 
+                                    answer: 'You can report concerns by visiting the Barangay 118 Hall, calling our office at (02) 8123-4567, or using the contact form on our website. For emergencies, contact proper emergency services first. You may also use the "Get In Touch" section on our site; our team will review and assist you accordingly.' 
+                                }
+                            ]
+                        }
+                    },
+                    footer: {
+                        title: "Barangay 118 Online System",
+                        description: "Digital and efficient services for Barangay 118.",
+                        socialMedia: {
+                            facebook: "https://www.facebook.com",
+                            email: "mailto:barangay118@gmail.com"
+                        },
+                        contactInfo: [
+                            "Barangay 118 Hall, Grace Park East",
+                            "Caloocan, Metro Manila",
+                            "(02) 8123-4567",
+                            "info@barangay118.gov.ph",
+                            "Mon-Fri: 8:00 AM - 5:00 PM"
+                        ],
+                        copyright: "&copy; 2025 Barangay 118 Online System. All Rights Reserved."
+                    }
+                };
+            }
+            
+            // Render officials dynamically
+            function renderOfficials(officials) {
+                const container = document.getElementById('officials-container');
+                if (!container) return;
+                
+                container.innerHTML = '';
+                
+                if (officials.length === 0) {
+                    container.innerHTML = '<p style="text-align: center; color: var(--gray); grid-column: 1 / -1;">No officials information available.</p>';
+                    return;
+                }
+                
+                officials.forEach(official => {
+                    const card = document.createElement('div');
+                    card.className = 'official-card';
+                    
+                    // Use avatar URL if available, otherwise use initial
+                    let avatarHTML = '';
+                    if (official.avatar && official.avatar.startsWith('http')) {
+                        avatarHTML = `<img src="${official.avatar}" alt="${official.name}" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-light);">`;
+                    } else {
+                        avatarHTML = `<div class="official-avatar">${official.avatar || official.name.charAt(0)}</div>`;
+                    }
+                    
+                    card.innerHTML = `
+                        ${avatarHTML}
+                        <div class="official-name">${official.name || 'Unnamed Official'}</div>
+                        <div class="official-position">${official.position || 'Position not specified'}</div>
+                        <p>${official.description || 'No description available.'}</p>
+                        ${official.contact ? `<div class="official-contact"><i class="fas fa-phone"></i> ${official.contact}</div>` : ''}
+                    `;
+                    
+                    container.appendChild(card);
+                });
+            }
+            
+            // Render committees dynamically
+            function renderCommittees(committees) {
+                const container = document.getElementById('committees-container');
+                if (!container) return;
+                
+                container.innerHTML = '';
+                
+                if (committees.length === 0) {
+                    container.innerHTML = '<p style="text-align: center; color: var(--gray); width: 100%;">No committees information available.</p>';
+                    return;
+                }
+                
+                // Split committees into two rows
+                const firstRow = committees.slice(0, 3);
+                const secondRow = committees.slice(3, 7);
+                
+                // Create first row
+                const row1 = document.createElement('div');
+                row1.className = 'committee-row-1';
+                
+                firstRow.forEach(committee => {
+                    const card = document.createElement('div');
+                    card.className = 'committee-card';
+                    card.innerHTML = `
+                        <div class="committee-icon"><i class="${committee.icon || 'fas fa-users'}"></i></div>
+                        <div class="committee-name">${committee.name || 'Unnamed Committee'}</div>
+                        <div class="committee-chairperson">${committee.chairperson ? 'Chairperson: ' + committee.chairperson : 'No chairperson specified'}</div>
+                        <p>${committee.description || 'No description available.'}</p>
+                    `;
+                    row1.appendChild(card);
+                });
+                
+                // Create second row
+                const row2 = document.createElement('div');
+                row2.className = 'committee-row-2';
+                
+                secondRow.forEach(committee => {
+                    const card = document.createElement('div');
+                    card.className = 'committee-card';
+                    card.innerHTML = `
+                        <div class="committee-icon"><i class="${committee.icon || 'fas fa-users'}"></i></div>
+                        <div class="committee-name">${committee.name || 'Unnamed Committee'}</div>
+                        <div class="committee-chairperson">${committee.chairperson ? 'Chairperson: ' + committee.chairperson : 'No chairperson specified'}</div>
+                        <p>${committee.description || 'No description available.'}</p>
+                    `;
+                    row2.appendChild(card);
+                });
+                
+                container.appendChild(row1);
+                container.appendChild(row2);
+            }
+            
+            // Render documents dynamically
+            function renderDocuments(documents) {
+                const container = document.getElementById('documents-container');
+                if (!container) return;
+                
+                container.innerHTML = '';
+                
+                if (documents.length === 0) {
+                    container.innerHTML = '<p style="text-align: center; color: var(--gray); grid-column: 1 / -1;">No documents information available.</p>';
+                    return;
+                }
+                
+                documents.forEach(doc => {
+                    const card = document.createElement('div');
+                    card.className = 'document-card';
+                    
+                    // Format requirements list
+                    let requirementsHTML = '';
+                    if (doc.requirements && doc.requirements.length > 0) {
+                        requirementsHTML = `
+                            <p><strong>Requirements:</strong></p>
+                            <ul class="requirements-list">
+                                ${doc.requirements.map(req => `<li>${req}</li>`).join('')}
+                            </ul>
+                        `;
+                    }
+                    
+                    // Format processing time
+                    let processingHTML = '';
+                    if (doc.processingTime) {
+                        processingHTML = `<p><strong>Processing Time:</strong> ${doc.processingTime}</p>`;
+                    }
+                    
+                    card.innerHTML = `
+                        <div class="document-icon"><i class="${doc.icon || 'fas fa-file'}"></i></div>
+                        <div class="document-name">${doc.name || 'Unnamed Document'}</div>
+                        <div class="document-description">
+                            <p>${doc.description || 'No description available.'}</p>
+                            ${requirementsHTML}
+                            ${processingHTML}
+                        </div>
+                    `;
+                    
+                    container.appendChild(card);
+                });
+            }
+            
+            // Render FAQs dynamically
+            function renderFAQs(faqs) {
+                const container = document.getElementById('faq-container');
+                if (!container) return;
+                
+                container.innerHTML = '';
+                
+                if (faqs.length === 0) {
+                    container.innerHTML = '<p style="text-align: center; color: var(--gray);">No FAQs available.</p>';
+                    return;
+                }
+                
+                faqs.forEach(faq => {
+                    const item = document.createElement('div');
+                    item.className = 'faq-item';
+                    item.innerHTML = `
+                        <div class="faq-question">
+                            <span>${faq.question || 'Question not available'}</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>${faq.answer || 'Answer not available'}</p>
+                        </div>
+                    `;
+                    container.appendChild(item);
+                });
+            }
+            
+            // Render footer contact info
+            function renderFooterContact(contactInfo) {
+                const container = document.getElementById('footer-contact-info');
+                if (!container) return;
+                
+                container.innerHTML = '';
+                
+                if (contactInfo.length === 0) {
+                    container.innerHTML = '<li>No contact information available</li>';
+                    return;
+                }
+                
+                contactInfo.forEach(info => {
+                    const li = document.createElement('li');
+                    let icon = 'fas fa-info-circle';
+                    if (info.includes('@') || info.includes('mail')) {
+                        icon = 'fas fa-envelope';
+                    } else if (info.includes('(') || info.includes(')') || info.includes('+')) {
+                        icon = 'fas fa-phone';
+                    } else if (info.includes('AM') || info.includes('PM') || info.includes('Mon') || info.includes('Fri')) {
+                        icon = 'fas fa-clock';
+                    } else if (info.includes('Hall') || info.includes('Caloocan') || info.includes('Manila')) {
+                        icon = 'fas fa-map-marker-alt';
+                    }
+                    
+                    li.innerHTML = `<i class="${icon}"></i> ${info}`;
+                    container.appendChild(li);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
